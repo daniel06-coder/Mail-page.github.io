@@ -46,16 +46,16 @@ button:hover{
 }
  p{
     /* outline: 1px solid red; */
-    width: 29em;
+    width: 28em;
     padding: 3px;
-    font-size: 0.8rem;
+    font-size: 0.79rem;
     font-weight: 700;
     margin: 1rem 0rem ;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.5px;
     color: rgba(0, 0, 0, 0.719);
     position: relative;
-    right: 2em;
+    right: 3.5em;
     font-style: normal;
 }
 
@@ -96,7 +96,7 @@ button:hover{
 .close-modal{
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    left: 9.5rem;
+    left: 8rem;
     bottom: 7rem;
     font-size: 2em;
     color: black;
