@@ -63,7 +63,7 @@ button:hover{
    background:linear-gradient(to left, rgba(231, 227, 227, 0.932) , rgba(209, 231, 224, 0.87), rgba(221, 221, 226, 0.952)); 
    color: white;
    width: 74vw;
-   height: 30vh;
+   height: fit-content;
    padding: 8em 2em;
    z-index: 10;
    position: absolute;
@@ -120,7 +120,7 @@ form{
     width: max-content;
     /* outline: 1px solid red; */
     position: relative;
-    right: 20px;
+    right: 25px;
 }
 label{
     display: none;
@@ -128,15 +128,15 @@ label{
     font-family: Arial, Helvetica, sans-serif;
 }
 input{
-    padding: 1rem 0.5rem;
+    padding: 0.9rem 0.4rem;
     font-size: 15px;
-    width: 14rem;
-    margin: 5px;
+    width: 13rem;
+    margin: 4px;
     border-radius: 10px;
     border: none;
 }
 form button{
-   padding: 1em;
+   padding: 0.9em;
    border-radius: 10px;
 }
 
@@ -225,4 +225,4 @@ form{
     width: min-content;
     cursor: pointer;
 }
-}
+};
