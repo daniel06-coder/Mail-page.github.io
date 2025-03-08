@@ -14,15 +14,29 @@ body{
     align-items: center;
     text-align: center;
     line-height: 1.9em;
-    background: linear-gradient(to right, rgb(11, 146, 146), rgba(24, 218, 192, 0.959) , rgb(11, 146, 146) );
+    background: linear-gradient(to right,rgb(255, 145, 0), rgb(255, 102, 0) , rgb(255, 81, 0) );
 }
 .hidden{
     display: none;
 }
+.background-change{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    /* flex-direction: row; */
+    top: 2rem;
+    background: white;
+    height: 5%;
+    width: 11%;
+    font-size: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    align-self: flex-end;
+}
 button{
     padding: 1.5em;
     color: white;
-    background-color: rgba(5, 34, 97, 0.884);
+    background-color: rgba(0, 0, 0, 0.884);
     border: none;
     border-radius: 1em;
     transform: 0.5s;
@@ -31,26 +45,34 @@ button:hover{
     scale: 0.9;
 }
  p{
-    font-size: 0.5rem;
+    /* outline: 1px solid red; */
+    width: 29em;
+    padding: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
     margin: 1rem 0rem ;
-    word-spacing: 0.1px;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1.5px;
-    color: rgba(255, 255, 255, 0.76);
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.719);
+    position: relative;
+    right: 2em;
+    font-style: normal;
 }
 
 .modal-window{
-   background: rgb(1, 1, 14); 
+   background:linear-gradient(to left, rgba(231, 227, 227, 0.932) , rgba(209, 231, 224, 0.87), rgba(221, 221, 226, 0.952)); 
    color: white;
-   width: 70vw;
-   height: fit-content;
-   padding: 2em;
+   width: 74vw;
+   height: 30vh;
+   padding: 8em 2em;
    z-index: 10;
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
    box-shadow: 2px 2px 20px  20px rgba(0, 0, 0, 0.151);
+   border-radius: 1.5em;
+   transition: linear(1.5s);
    
 }
 .overlay{
@@ -59,23 +81,26 @@ button:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgba(255, 255, 255, 0.541);
     backdrop-filter: blur(3px);
     z-index: 5;
 } 
-.modal-window img{
+/* .modal-window img{
    position: relative;
-   top: -3em;
-   left: 1rem;
+   bottom: 7.2em;
+   left: 1.4rem;
+   height: 4em;
    justify-content: center;
    align-self: center;
-}
+} */
 .close-modal{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    left: 6rem;
-    top: -1rem;
+    left: 9.5rem;
+    bottom: 7rem;
     font-size: 2em;
-    color: rgba(255, 255, 255, 0.651);
+    color: black;
+    /* color: rgba(255, 255, 255, 0.651); */
     background: none;
     padding: 10px;
     width: min-content;
@@ -84,14 +109,18 @@ button:hover{
 .modal-window h2{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    position: relative;
+    bottom: 3em;
+    color: black;
 }
 
 form{
     width: max-content;
     /* outline: 1px solid red; */
     position: relative;
-    right: 10px;
+    right: 20px;
 }
 label{
     display: none;
@@ -99,19 +128,21 @@ label{
     font-family: Arial, Helvetica, sans-serif;
 }
 input{
-    padding: 0.5rem;
-    width: 10rem;
-    
+    padding: 1rem 0.5rem;
+    font-size: 15px;
+    width: 14rem;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
 }
 form button{
-   padding: 0.6rem;
+   padding: 1em;
    border-radius: 10px;
 }
 
 
 @media (min-width: 768px) {
     .modal-window{
-        background-color: red;
    /* background: rgb(1, 1, 14);  */
    color: white;
    width: 70vw;
@@ -132,7 +163,7 @@ form button{
    justify-content: center;
    align-self: center;
    height: 2px;
-    height: 7vh;
+    height: 9vh;
 }
 form{
     width: max-content;
@@ -155,7 +186,6 @@ form{
 }
 @media (min-width: 1024px) {
  .modal-window{
-        background-color: red;
    /* background: rgb(1, 1, 14);  */
    color: white;
    width: 70vw;
@@ -176,7 +206,7 @@ form{
    justify-content: center;
    align-self: center;
    height: 2px;
-    height: 7vh;
+    height: 9vh;
 }
 form{
     width: max-content;
