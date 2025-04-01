@@ -20,18 +20,20 @@ body{
     display: none;
 }
 .background-change{
-    position: absolute;
+    position: relative;
     display: flex;
-    text-align: center;
-    /* flex-direction: row; */
-    top: 2rem;
+    justify-self: right;
+    align-self: flex-end;
+    flex-direction: row;
+    bottom: 250px;
     background: white;
-    height: 5%;
-    width: 11%;
+    height: 10px;
+    width: 10px;
     font-size: 10px;
     margin-right: 20px;
     border-radius: 50%;
-    align-self: flex-end;
+    /* outline: 5px solid black; */
+
 }
 button{
     padding: 1.5em;
@@ -45,17 +47,14 @@ button:hover{
     scale: 0.9;
 }
  p{
-    /* outline: 1px solid red; */
     width: 28em;
     padding: 3px;
     font-size: 0.79rem;
     font-weight: 700;
-    margin: 1rem 0rem ;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.5px;
     color: rgba(0, 0, 0, 0.719);
     position: relative;
-    right: 3.5em;
     font-style: normal;
 }
 
@@ -75,6 +74,13 @@ button:hover{
    transition: linear(1.5s);
    
 }
+.inside-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 .overlay{
     position: absolute;
     top: 0;
@@ -85,22 +91,16 @@ button:hover{
     backdrop-filter: blur(3px);
     z-index: 5;
 } 
-/* .modal-window img{
-   position: relative;
-   bottom: 7.2em;
-   left: 1.4rem;
-   height: 4em;
-   justify-content: center;
-   align-self: center;
-} */
+
 .close-modal{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    left: 8rem;
-    bottom: 7rem;
+    bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: right;
     font-size: 2em;
     color: black;
-    /* color: rgba(255, 255, 255, 0.651); */
     background: none;
     padding: 10px;
     width: min-content;
@@ -118,9 +118,7 @@ button:hover{
 
 form{
     width: max-content;
-    /* outline: 1px solid red; */
     position: relative;
-    right: 25px;
 }
 label{
     display: none;
@@ -143,11 +141,9 @@ form button{
 
 @media (min-width: 768px) {
     .modal-window{
-   /* background: rgb(1, 1, 14);  */
    color: white;
    width: 70vw;
    height: fit-content;
-   padding: 2em;
    z-index: 10;
    position: absolute;
    left: 50%;
@@ -156,41 +152,18 @@ form button{
    box-shadow: 2px 2px 20px  20px rgba(0, 0, 0, 0.151);
    
 }
-.modal-window img{
-   position: relative;
-   top: -4em;
-   left: 1rem;
-   justify-content: center;
-   align-self: center;
-   height: 2px;
-    height: 9vh;
-}
-form{
-    width: max-content;
-    /* outline: 1px solid red; */
-    position: relative;
-    left: 8.2em;
-}
+/* 
 .close-modal{
-    position: relative;
-    left: 12rem;
-    top: -3rem;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.651);
-    background: none;
-    padding: 10px;
-    width: min-content;
-    cursor: pointer;
-}
+ display: none;
+
+} */
 
 }
 @media (min-width: 1024px) {
  .modal-window{
-   /* background: rgb(1, 1, 14);  */
    color: white;
    width: 70vw;
    height: fit-content;
-   padding: 2em;
    z-index: 10;
    position: absolute;
    left: 50%;
@@ -199,30 +172,8 @@ form{
    box-shadow: 2px 2px 20px  20px rgba(0, 0, 0, 0.151);
    
 }
-.modal-window img{
-   position: relative;
-   top: -4em;
-   left: 1rem;
-   justify-content: center;
-   align-self: center;
-   height: 2px;
-    height: 9vh;
+/* .close-modal{
+ display: none;
+ 
+} */
 }
-form{
-    width: max-content;
-    /* outline: 1px solid red; */
-    position: relative;
-    left: 14em;
-}
-.close-modal{
-    position: relative;
-    left: 18rem;
-    top: -4rem;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.651);
-    background: none;
-    padding: 10px;
-    width: min-content;
-    cursor: pointer;
-}
-};
