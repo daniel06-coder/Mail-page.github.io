@@ -9,6 +9,7 @@
 <body id="body">
 
     <button name="click" type="button" class="background-change"></button>
+
     <h1 id="header-text" style="color: rgb(0, 0, 0);  font-weight: 800; font-family: Arial, Helvetica, sans-serif; position: relative; bottom: 3em;">Hello There</h1>
     <button class="modal-button">Click here to subscribe to our newsletter</button>
 
@@ -18,13 +19,15 @@
 
 
     <div class="modal-window hidden">
-    <!-- <img src="./favicon-32x32.png" alt="Logo" > -->
-     <button class="close-modal">&times</button>
 
-    <h2 class = "text">Newsletter</h2>
 
-    <p style= "position: relative;
-     bottom: 7em; "  class ="text">Stay up to date with our latest news and products</p>
+    <div class="inside-modal">
+     <button class ="close-modal">&times</button>
+
+    <h2 class="text">Newsletter</h2>
+
+    <p class="minor--text" style ="position: relative;
+     bottom: 7em;" >Stay up to date with our latest news and products</p>
         
 
     <form action="#" id="newsletter">
@@ -34,9 +37,10 @@
         <button type="submit" class="text">SUSCRIBE</button>
     </form>
 
-     <p style="font-style: italic; position: relative;
-     top: 6em;" class ="text" >Your email is safe with us, we don't spam</p>
+     <p class="minor--text2" style="font-style: italic; position: relative;
+     top: 6em;">Your email is safe with us, we don't spam</p>
 
+    </div>
     </div>
 
     <div class="overlay hidden"></div>
