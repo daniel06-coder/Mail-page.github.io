@@ -10,6 +10,8 @@ const changeBackground = document.querySelector('.background-change');
 const body = document.getElementById('body');
 const headerText = document.getElementById("header-text");
 const myFontFamily = document.querySelector('.text');
+const minorText = document.querySelector('.minor--text')
+const minorTextTwo = document.querySelector('.minor--text2')
 
 let change = true;
 
@@ -36,25 +38,35 @@ formElement.addEventListener('submit', function () {
 
 
 changeBackground.addEventListener('click', function () {
+
+        this.style.background = "rgb(255, 81, 0)";
+
       body.style.background = "white";
 
 
       headerText.textContent = "Hope You Like";
       headerText.style.color = "rgb(255, 81, 0)";
       
-    this.style.background = "rgb(255, 81, 0)";
+
+       modalWindow.style.background =
+         "linear-gradient(to right,rgb(255, 145, 0), rgb(255, 102, 0) , rgb(255, 81, 0))";
+
     modalButton.style.backgroundColor = "rgb(255, 81, 0)";
     modalButton.style.color = 'white';
     
     myFontFamily.style.fontFamily = "Georgia, 'Times New Roman', Times, serif";
-    myFontFamily.style.color = "white";
+
 
     closeModal.style.color = 'white';
     
 
+     myFontFamily.style.color = 'white';
 
-    modalWindow.style.background =
-      "linear-gradient(to right,rgb(255, 145, 0), rgb(255, 102, 0) , rgb(255, 81, 0))";
+     minorText.style.color = 'white';
+     
+     minorTextTwo.style.color = 'white';
+
+ 
 
 });
 
